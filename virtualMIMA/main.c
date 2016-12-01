@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
     }
     char buffer[1000];
     while (fgets(buffer, sizeof(buffer), file)) {
-        
+        return -1;
     }
     return 0;
     //test GÄ
