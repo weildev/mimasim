@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 
+
 int main(int argc, const char * argv[]) {
     if (argc != 2) {
         return -1;
@@ -17,6 +18,7 @@ int main(int argc, const char * argv[]) {
     if (!file) {
         return -2;
     }
+    __uint32_t programm[0x7FFFFF];
     char buffer[1000];
     while (fgets(buffer, sizeof(buffer), file)) {
         
