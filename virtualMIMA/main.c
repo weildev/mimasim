@@ -9,7 +9,17 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    if (argc != 2) {
+        return -1;
+    }
+    FILE *file;
+    file = fopen(argv[1], "r");
+    if (!file) {
+        return -2;
+    }
+    char buffer[1000];
+    while (fgets(buffer, sizeof(buffer), file)) {
+        
+    }
     return 0;
 }
